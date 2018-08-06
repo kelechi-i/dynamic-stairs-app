@@ -36,4 +36,8 @@ describe('dynamic stairs function', () => {
     it('indicates false when an input is not a number', () => {
         equal(dynamicStairs.validateInputs("not a number"), false);
     });
+
+    it('indicates true when an input is a number', () => {
+        equal(dynamicStairs.validateInputs(10), true);
+    });
 });
